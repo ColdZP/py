@@ -1,0 +1,12 @@
+win10系统mysql服务没有响应控制功能处理方法
+
+CMD命令 C:\mysql\mysql-8.0.23-winx64\bin> net start mysql
+服务没有响应控制功能。
+
+缺少文件
+访问https://cn.dll-files.com/vcruntime140_1.dll.html，下载VCRUNTIME140_1.DLL最新的版本
+
+压缩文件放入MySQL的bin子目录下即可
+
+CMD命令 net start mysql
+MySQL 服务正在启动 .
